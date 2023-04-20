@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+/* For screens with a width of more than 991px */
+.header {
+  background-color: #15141a;
+  color: #ffffff;
+}
+.header .navbar .container .navbar-toggler {
+  border: 1px white solid;
+  color: none;
+}
+.header .navbar .container .navbar-toggler .navbar-toggler-icon {
+  background-image: url(../img/icons/burger.png);
+  height: 20px;
+}
+.header .navbar .container .navbar-brand {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  line-height: 58px;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .navbar .container .navbar-brand p {
+  color: #999999;
+  font-size: 9px;
+  width: 45px;
+  line-height: 10px;
+  letter-spacing: 1.26px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+.header .navbar .container .collapse .nav-link {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 10px;
+  text-align: center;
+}
+.header .navbar .container .collapse .nav-link:hover {
+  color: #999999;
+}
+.header .navbar .container .collapse .active {
+  position: relative;
+}
+.header .navbar .container .collapse .active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 8px;
+  width: 45px;
+  height: 2.5px;
+  background-image: url("../img/icons/line.png");
+  background-position: center;
+}
+
+/* For screens with width less than 320px*/
+@media (max-width: 320px) {
+  /* CSS rules for responsive design */
+  .header {
+    background-color: #15141a;
+    color: #ffffff;
+  }
+  .header .navbar .container .navbar-toggler {
+    border: 1px white solid;
+    color: none;
+  }
+  .header .navbar .container .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../img/icons/burger.png);
+    height: 20px;
+  }
+  .header .navbar .container .navbar-brand {
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header .navbar .container .navbar-brand p {
+    color: #999999;
+    font-size: 9px;
+    width: 45px;
+    line-height: 10px;
+    letter-spacing: 1.26px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link {
+    color: #ffffff;
+    color: #fffefe;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 7px 10px;
+    text-align: center;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link:hover {
+    color: #999999;
+  }
+  .header .navbar .container .collapse .nav-item .active {
+    position: relative;
+  }
+  .header .navbar .container .collapse .nav-item .active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background-image: url("../img/icons/line.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+  }
+}
+/* For screens with width from 320px to 768px */
+@media (min-width: 320px) and (max-width: 768px) {
+  /* CSS rules for responsive design */
+  .header {
+    background-color: #15141a;
+    color: #ffffff;
+  }
+  .header .navbar .container .navbar-toggler {
+    border: 1px white solid;
+    color: none;
+  }
+  .header .navbar .container .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../img/icons/burger.png);
+    height: 20px;
+  }
+  .header .navbar .container .navbar-brand {
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header .navbar .container .navbar-brand p {
+    color: #999999;
+    font-size: 9px;
+    width: 45px;
+    line-height: 10px;
+    letter-spacing: 1.26px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link {
+    color: #ffffff;
+    color: #fffefe;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 7px 10px;
+    text-align: center;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link:hover {
+    color: #999999;
+  }
+  .header .navbar .container .collapse .nav-item .active {
+    position: relative;
+  }
+  .header .navbar .container .collapse .nav-item .active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background-image: url("../img/icons/line.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+  }
+}
+/* For screens with width from 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* CSS rules for responsive design */
+  .header {
+    background-color: #15141a;
+    color: #ffffff;
+  }
+  .header .navbar .container .navbar-toggler {
+    border: 1px white solid;
+    color: none;
+  }
+  .header .navbar .container .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../img/icons/burger.png);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    height: 30px;
+  }
+  .header .navbar .container .navbar-brand {
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
+    line-height: 58px;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header .navbar .container .navbar-brand p {
+    color: #999999;
+    font-size: 9px;
+    width: 45px;
+    line-height: 10px;
+    letter-spacing: 1.26px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link {
+    color: #ffffff;
+    color: #fffefe;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 7px 10px;
+    text-align: center;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link:hover {
+    color: #999999;
+  }
+  .header .navbar .container .collapse .nav-item .active {
+    position: relative;
+  }
+  .header .navbar .container .collapse .nav-item .active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background-image: url("../img/icons/line.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+  }
+}
