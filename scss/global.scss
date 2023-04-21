@@ -1,8 +1,35 @@
 @import "variables.scss";
-*{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
+@import "header.scss";
+@import "banner.scss";
+@import "product-overview.scss";
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
 }
-.container{
-    max-width: 1170px;
+.container {
+  max-width: 1170px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.title{
+  font-weight: 600;
+}
+.subtitle{
+  color: $blue;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.26px;
+  line-height: 30px;
+}
+
+@media (max-width: 363px) {
+  .banner__subtitle {
+    color: $blue;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.26px;
+    line-height: 30px;
+  }
 }

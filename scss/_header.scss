@@ -41,7 +41,7 @@
           font-weight: 600;
           padding: 7px 10px;
           text-align: center;
-          &:hover{
+          &:hover {
             color: $gray;
           }
         }
@@ -63,6 +63,11 @@
     }
   }
 }
+.navbar-bg {
+  background-color:$background-black;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 
 /* For screens with width less than 320px*/
 @media (max-width: 320px) {
@@ -72,6 +77,7 @@
     color: $white;
     .navbar {
       .container {
+        background-color: $background-black;
         .navbar-toggler {
           border: 1px white solid;
           color: none;
@@ -110,7 +116,7 @@
               line-height: 30px;
               padding: 7px 10px;
               text-align: center;
-              &:hover{
+              &:hover {
                 color: $gray;
               }
             }
@@ -145,6 +151,7 @@
     color: $white;
     .navbar {
       .container {
+        background-color: $background-black;
         .navbar-toggler {
           border: 1px white solid;
           color: none;
@@ -183,7 +190,7 @@
               line-height: 40px;
               padding: 7px 10px;
               text-align: center;
-              &:hover{
+              &:hover {
                 color: $gray;
               }
             }
@@ -219,6 +226,7 @@
     color: $white;
     .navbar {
       .container {
+        background-color: $background-black;
         .navbar-toggler {
           border: 1px white solid;
           color: none;
@@ -259,7 +267,7 @@
               line-height: 40px;
               padding: 7px 10px;
               text-align: center;
-              &:hover{
+              &:hover {
                 color: $gray;
               }
             }

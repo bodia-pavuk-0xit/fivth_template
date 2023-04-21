@@ -1,4 +1,570 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+/* For screens with a width of more than 991px */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+.header {
+  background-color: #15141a;
+  color: #ffffff;
+}
+.header .navbar .container .navbar-toggler {
+  border: 1px white solid;
+  color: none;
+}
+.header .navbar .container .navbar-toggler .navbar-toggler-icon {
+  background-image: url(../img/icons/burger.png);
+  height: 20px;
+}
+.header .navbar .container .navbar-brand {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  line-height: 58px;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .navbar .container .navbar-brand p {
+  color: #999999;
+  font-size: 9px;
+  width: 45px;
+  line-height: 10px;
+  letter-spacing: 1.26px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+.header .navbar .container .collapse .nav-link {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 10px;
+  text-align: center;
+}
+.header .navbar .container .collapse .nav-link:hover {
+  color: #999999;
+}
+.header .navbar .container .collapse .active {
+  position: relative;
+}
+.header .navbar .container .collapse .active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 8px;
+  width: 45px;
+  height: 2.5px;
+  background-image: url("../img/icons/line.png");
+  background-position: center;
+}
+
+.navbar-bg {
+  background-color: #15141a;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* For screens with width less than 320px*/
+@media (max-width: 320px) {
+  /* CSS rules for responsive design */
+  .header {
+    background-color: #15141a;
+    color: #ffffff;
+  }
+  .header .navbar .container {
+    background-color: #15141a;
+  }
+  .header .navbar .container .navbar-toggler {
+    border: 1px white solid;
+    color: none;
+  }
+  .header .navbar .container .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../img/icons/burger.png);
+    height: 20px;
+  }
+  .header .navbar .container .navbar-brand {
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header .navbar .container .navbar-brand p {
+    color: #999999;
+    font-size: 9px;
+    width: 45px;
+    line-height: 10px;
+    letter-spacing: 1.26px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link {
+    color: #ffffff;
+    color: #fffefe;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 7px 10px;
+    text-align: center;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link:hover {
+    color: #999999;
+  }
+  .header .navbar .container .collapse .nav-item .active {
+    position: relative;
+  }
+  .header .navbar .container .collapse .nav-item .active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background-image: url("../img/icons/line.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+  }
+}
+/* For screens with width from 320px to 768px */
+@media (min-width: 320px) and (max-width: 768px) {
+  /* CSS rules for responsive design */
+  .header {
+    background-color: #15141a;
+    color: #ffffff;
+  }
+  .header .navbar .container {
+    background-color: #15141a;
+  }
+  .header .navbar .container .navbar-toggler {
+    border: 1px white solid;
+    color: none;
+  }
+  .header .navbar .container .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../img/icons/burger.png);
+    height: 20px;
+  }
+  .header .navbar .container .navbar-brand {
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header .navbar .container .navbar-brand p {
+    color: #999999;
+    font-size: 9px;
+    width: 45px;
+    line-height: 10px;
+    letter-spacing: 1.26px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link {
+    color: #ffffff;
+    color: #fffefe;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 7px 10px;
+    text-align: center;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link:hover {
+    color: #999999;
+  }
+  .header .navbar .container .collapse .nav-item .active {
+    position: relative;
+  }
+  .header .navbar .container .collapse .nav-item .active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background-image: url("../img/icons/line.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+  }
+}
+/* For screens with width from 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* CSS rules for responsive design */
+  .header {
+    background-color: #15141a;
+    color: #ffffff;
+  }
+  .header .navbar .container {
+    background-color: #15141a;
+  }
+  .header .navbar .container .navbar-toggler {
+    border: 1px white solid;
+    color: none;
+  }
+  .header .navbar .container .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../img/icons/burger.png);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    height: 30px;
+  }
+  .header .navbar .container .navbar-brand {
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
+    line-height: 58px;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header .navbar .container .navbar-brand p {
+    color: #999999;
+    font-size: 9px;
+    width: 45px;
+    line-height: 10px;
+    letter-spacing: 1.26px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link {
+    color: #ffffff;
+    color: #fffefe;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 7px 10px;
+    text-align: center;
+  }
+  .header .navbar .container .collapse .nav-item .nav-link:hover {
+    color: #999999;
+  }
+  .header .navbar .container .collapse .nav-item .active {
+    position: relative;
+  }
+  .header .navbar .container .collapse .nav-item .active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background-image: url("../img/icons/line.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+  }
+}
+.header {
+  background-image: url("../img/background_photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .baner .container .baner__left {
+  margin-top: 100px;
+}
+.header .baner .container .baner__left .banner__subtitle {
+  color: #008ed6;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.26px;
+  line-height: 48px;
+}
+.header .baner .container .baner__left .baner__title {
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: 600;
+}
+.header .baner .container .baner__left .baner__text {
+  color: #999999;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 18px;
+}
+.header .baner .container .baner__left .baner__buttons {
+  margin-top: 63px;
+}
+.header .baner .container .baner__left .baner__buttons .btn {
+  width: 160px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.header .baner .container .baner__left .baner__buttons .btn-primary {
+  background-color: #008ed6;
+  margin-right: 20px;
+}
+.header .baner .container .baner__left .baner__buttons .btn-primary:hover {
+  background: #38bdff;
+  border: 1px solid #008ed6;
+}
+.header .baner .container .baner__left .baner__buttons .btn-secondary {
+  background: none;
+  border: 1px solid #999999;
+}
+.header .baner .container .baner__left .baner__buttons .btn-secondary:hover {
+  background: #999999;
+}
+.header .baner .container .baner__right {
+  margin-top: 100px;
+}
+
+@media (max-width: 363px) {
+  .header .baner .container .baner__left {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .header .baner .container .baner__left .banner__subtitle {
+    color: #008ed6;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.26px;
+    line-height: 30px;
+  }
+  .header .baner .container .baner__left .baner__title {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .header .baner .container .baner__left .baner__text {
+    color: #999999;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 18px;
+  }
+  .header .baner .container .baner__left .baner__buttons {
+    margin-top: 63px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn-primary {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .header .baner .container .baner__right {
+    display: none;
+  }
+}
+@media (min-width: 363px) and (max-width: 575.98px) {
+  .header .baner .container .baner__left {
+    margin-top: 55px;
+    text-align: center;
+  }
+  .header .baner .container .baner__left .banner__subtitle {
+    color: #008ed6;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.26px;
+    line-height: 35px;
+  }
+  .header .baner .container .baner__left .baner__title {
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .header .baner .container .baner__left .baner__text {
+    color: #999999;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 22px;
+  }
+  .header .baner .container .baner__left .baner__buttons {
+    padding-bottom: 30px;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn-primary {
+    background-color: #008ed6;
+    margin-right: 20px;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn-secondary {
+    background: none;
+    border: 1px solid #999999;
+  }
+  .header .baner .container .baner__right {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header .baner .container .baner__left {
+    margin-top: 60px;
+    text-align: center;
+  }
+  .header .baner .container .baner__left .banner__subtitle {
+    color: #008ed6;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.26px;
+    line-height: 35px;
+  }
+  .header .baner .container .baner__left .baner__title {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .header .baner .container .baner__left .baner__text {
+    color: #999999;
+    font-weight: 400;
+    line-height: 35px;
+    font-size: 24px;
+  }
+  .header .baner .container .baner__left .baner__buttons {
+    padding-bottom: 30px;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 4px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn-primary {
+    background-color: #008ed6;
+    margin-right: 20px;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn-secondary {
+    background: none;
+    border: 1px solid #999999;
+  }
+  .header .baner .container .baner__right {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header {
+    background-image: url("../img/background_photo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header .baner .container .baner__left {
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .baner .container .baner__left .banner__subtitle {
+    color: #008ed6;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.26px;
+    line-height: 30px;
+  }
+  .header .baner .container .baner__left .baner__title {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 600;
+  }
+  .header .baner .container .baner__left .baner__text {
+    color: #999999;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 20px;
+  }
+  .header .baner .container .baner__left .baner__buttons {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn {
+    width: 160px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn-primary {
+    background-color: #008ed6;
+    margin-right: 20px;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn-primary:hover {
+    background: #38bdff;
+    border: 1px solid #008ed6;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn-secondary {
+    background: none;
+    border: 1px solid #999999;
+  }
+  .header .baner .container .baner__left .baner__buttons .btn-secondary:hover {
+    background: #999999;
+  }
+  .header .baner .container .baner__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  .header .baner .container .baner__right img {
+    flex: 1;
+  }
+}
+.main .product-overview .container {
+  padding-top: 65px;
+  text-align: center;
+}
+.main .product-overview .container .product-overview__image {
+  margin-bottom: 100px;
+}
+.main .product-overview .container .product-overview__block .product-overview__block-text {
+  color: #999999;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 0px 40px;
+}
+
+@media (max-width: 363px) {
+  .main .product-overview .container {
+    padding-top: 65px;
+    text-align: center;
+  }
+  .main .product-overview .container .product-overview__title {
+    font-size: 25px;
+  }
+  .main .product-overview .container .product-overview__image {
+    margin-bottom: 30px;
+  }
+  .main .product-overview .container .product-overview__block .product-overview__block-text {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0px 10px;
+  }
+}
 * {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
@@ -6,4 +572,31 @@
 
 .container {
   max-width: 1170px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #008ed6;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.26px;
+  line-height: 30px;
+}
+
+@media (max-width: 363px) {
+  .banner__subtitle {
+    color: #008ed6;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.26px;
+    line-height: 30px;
+  }
 }

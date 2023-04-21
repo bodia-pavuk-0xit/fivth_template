@@ -19,6 +19,23 @@
    /* CSS rules for responsive design */
 }
 
+// Additional styles for screens smaller than 363px
+@media (max-width: 363px) {
+}
+
+// For screens with width from 363px to 576px
+@media (min-width: 363px) and (max-width: 575.98px) {
+}
+
+// For screens with width from 576px to 768px
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// For screens with width from 768px to 992px
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+
 responsive: [
         {
           breakpoint: 849,
