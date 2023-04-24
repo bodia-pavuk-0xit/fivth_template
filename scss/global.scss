@@ -1,7 +1,9 @@
-@import "variables.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
 @import "header.scss";
-@import "banner.scss";
+@import "baner.scss";
 @import "product-overview.scss";
+@import "details.scss";
 * {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
@@ -13,23 +15,71 @@ img {
   max-width: 100%;
   height: auto;
 }
-.title{
+.title {
+  font-size: 36px;
   font-weight: 600;
 }
-.subtitle{
+.subtitle {
   color: $blue;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.26px;
   line-height: 30px;
 }
+.text {
+  color: $gray;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
 
+// Additional styles for screens smaller than 363px
 @media (max-width: 363px) {
-  .banner__subtitle {
-    color: $blue;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1.26px;
+  .subtitle {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+// For screens with width from 363px to 576px
+@media (min-width: 363px) and (max-width: 575.98px) {
+  .subtitle {
+    font-size: 16px;
+    line-height: 35px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+
+// For screens with width from 576px to 768px
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .subtitle {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+// For screens with width from 768px to 992px
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .subtitle {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .text {
     line-height: 30px;
   }
 }

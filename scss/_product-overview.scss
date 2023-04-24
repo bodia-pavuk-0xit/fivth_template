@@ -1,19 +1,22 @@
 @import "variables.scss";
 .main {
   .product-overview {
-    .container {
-      padding-top: 65px;
-      text-align: center;
-      .product-overview__image {
-        margin-bottom: 100px;
+    padding-bottom: 140px;
+    padding-top: 100px;
+    text-align: center;
+    img {
+      margin-top: 35px;
+      margin-bottom: 102px;
+    }
+    &__block {
+      img {
+        margin-bottom: 63px;
       }
-      .product-overview__block {
-        .product-overview__block-text {
-          color: $gray;
-          font-size: 16px;
-          line-height: 25px;
-          margin: 0px 40px;
-        }
+      .product-overview__block-title{
+        font-size: 24px;
+      }
+      .product-overview__block-text {
+        margin: 0px 20px;
       }
     }
   }
@@ -23,21 +26,22 @@
 @media (max-width: 363px) {
   .main {
     .product-overview {
-      .container {
-        padding-top: 65px;
-        text-align: center;
-        .product-overview__title{
-          font-size: 25px;
+      padding-top: 30px;
+      padding-bottom: 40px;
+      img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      &__block {
+        img {
+          margin-bottom: 20px;
         }
-        .product-overview__image {
-          margin-bottom: 30px;
+        .product-overview__block-title{
+          font-size: 16px;
         }
-        .product-overview__block {
-          .product-overview__block-text {
-            font-size: 16px;
-            line-height: 25px;
-            margin: 0px 10px;
-          }
+        .product-overview__block-text {
+          margin: 0px 10px;
+          margin-bottom: 20px;
         }
       }
     }
@@ -46,12 +50,54 @@
 
 // For screens with width from 363px to 576px
 @media (min-width: 363px) and (max-width: 575.98px) {
+  .main {
+    .product-overview {
+      padding-top: 40px;
+      padding-bottom: 60px;
+      img {
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+      &__block {
+        img {
+          margin-top: 0px;
+          margin-bottom: 10px;
+        }
+        .product-overview__block-title{
+          font-size: 25px;
+        }
+        .product-overview__block-text {
+          margin: 0px 25px;
+          padding-bottom: 50px;
+        }
+      }
+    }
+  }
 }
 
-// For screens with width from 576px to 768px
-@media (min-width: 576px) and (max-width: 767.98px) {
+// For screens with width from 576px to 992px
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .main {
+    .product-overview {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      img {
+        margin-bottom: 50px;
+      }
+      &__block {
+        img {
+          margin-top: 0px;
+          margin-bottom: 10px;
+        }
+        .product-overview__block-title{
+          font-size: 25px;
+        }
+        .product-overview__block-text {
+          margin: 0px 10px;
+          padding-bottom: 50px;
+        }
+      }
+    }
+  }
 }
 
-// For screens with width from 768px to 992px
-@media (min-width: 768px) and (max-width: 991.98px) {
-}
