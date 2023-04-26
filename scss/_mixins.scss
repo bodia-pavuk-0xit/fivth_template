@@ -21,3 +21,25 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
+@mixin flex-sb-row(
+  $display: flex,
+  $direction: row,
+  $justify-content: space-between,
+  $align-items: center
+) {
+  justify-content: $justify-content;
+  display: $display;
+  flex-direction: $direction;
+  align-items: $align-items;
+}
+@mixin flex-sb-col(
+  $display: flex,
+  $direction: column,
+  $justify-content: space-between,
+  $align-items: center
+) {
+  justify-content: $justify-content;
+  display: $display;
+  flex-direction: $direction;
+  align-items: $align-items;
+}
