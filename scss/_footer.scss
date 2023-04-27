@@ -1,0 +1,61 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+.footer {
+  height: 160px;
+  background-color: $background-black;
+  .container {
+    height: 100%;
+    .footer__center {
+      height: 100%;
+      @include flex-column;
+      .footer__logo {
+        a {
+          margin: 0px 18px;
+        }
+      }
+      .footer__copy {
+        p {
+          text-align: center;
+          color: #444348;
+          line-height: 20px;
+          font-weight: 600;
+          font-size: 16px;
+          margin: 0px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+// Additional styles for screens smaller than 363px
+@media (max-width: 363px) {
+  .footer {
+    height: 160px;
+    background-color: $background-black;
+    .container {
+      height: 100%;
+      .footer__center {
+        height: 100%;
+        @include flex-column;
+        .footer__logo {
+          a {
+            margin: 0px 10px;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          }
+        }
+        .footer__copy {
+          p {
+            text-align: center;
+            color: #444348;
+            line-height: 20px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 0px;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

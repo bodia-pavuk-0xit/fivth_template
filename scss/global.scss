@@ -7,14 +7,22 @@
 @import "testimonials-slider.scss";
 @import "pricing-plans.scss";
 @import "cta.scss";
+@import "footer.scss";
+
+// There is no need to reset the styles because bootstrap has its own reset styles file.
+/* Restore finger cursor on links */
+a {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation !important; /* Увімкнення курсора пальця */
+  cursor: pointer;
+}
 * {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
-}
-*{
-  padding: 0;
-  margin: 0;
-  border: 0;
 }
 .container {
   max-width: 1170px;
@@ -61,15 +69,14 @@ img {
     background: $gray;
   }
 }
-.span-blue{
+.span-blue {
   color: $blue;
 }
-a{
+a {
   text-decoration: none;
   color: $gray;
   font-size: 18px;
 }
-
 
 // Additional styles for screens smaller than 363px
 @media (max-width: 363px) {
