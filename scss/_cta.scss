@@ -1,0 +1,507 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+.main {
+  .contacts {
+    width: 100%;
+    height: 722px;
+    margin-top: 60px;
+    background: $background-contact;
+    p {
+      margin-bottom: 0px;
+    }
+    &__row {
+      @include flex-column;
+      img {
+        width: 42px;
+        padding-bottom: 59px;
+      }
+      .contacts__subtitle {
+        padding-top: 60px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+      }
+      .contacts__text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+      }
+    }
+    &__link {
+      &:hover {
+        color: $gray-hover;
+      }
+    }
+  }
+  .map-form {
+    position: relative;
+    .form {
+      position: absolute;
+      bottom: 306px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      max-height: 360px;
+      max-width: 770px;
+      background-color: $background-black;
+      padding: 3.25%;
+      overflow: none;
+      input {
+        height: 50px;
+        background-color: $background-black;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 20px 18px;
+        color: $gray;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 48px;
+        border-radius: 3px;
+        &:focus {
+          box-shadow: 0px 0px 5px $gray;
+        }
+        &::placeholder {
+          opacity: 0.2;
+          color: $white;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 48px;
+        }
+      }
+      textarea {
+        height: 190px;
+        resize: none;
+        overflow-y: auto;
+        font-size: 16px;
+        background-color: $background-black;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 20px 18px;
+        color: $border-white;
+        border-radius: 3px;
+        &:focus {
+          box-shadow: 0px 0px 5px $white;
+        }
+        &::placeholder {
+          opacity: 0.2;
+          color: $white;
+          font-size: 14px;
+          font-weight: 700;
+        }
+        // Custom scrollbar
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: $gray-hover;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #363636;
+          border-radius: 5px;
+        }
+
+        &:-webkit-scrollbar-thumb:hover {
+          background-color: #555;
+        }
+      }
+    }
+    .btn {
+      font-size: 14px;
+    }
+  }
+}
+// Additional styles for screens smaller than 363px
+@media (max-width: 363px) {
+  .main {
+    .contacts {
+      width: 100%;
+      height: 1050px;
+      margin-top: 30px;
+      background: $background-contact;
+      p {
+        margin-bottom: 0px;
+      }
+      &__row {
+        @include flex-column;
+        img {
+          width: 42px;
+          padding-bottom: 30px;
+        }
+        .contacts__subtitle {
+          padding-top: 30px;
+        }
+      }
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+        img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+        }
+        .contacts__text {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+      &__link {
+        &:hover {
+          color: $gray-hover;
+        }
+      }
+    }
+    .map-form {
+      .form {
+        max-height: 900px;
+        max-width: 343px;
+        width: 90%;
+        background-color: $background-black;
+        padding: 30px 10px;
+        overflow: none;
+        input {
+          height: 50px;
+          background-color: $background-black;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          padding: 20px 18px;
+          color: $gray;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 48px;
+          border-radius: 3px;
+          &:focus {
+            box-shadow: 0px 0px 5px $gray;
+          }
+          &::placeholder {
+            opacity: 0.2;
+            color: $white;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 48px;
+          }
+        }
+        textarea {
+          height: 190px;
+          resize: none;
+          overflow-y: auto;
+          font-size: 16px;
+          background-color: $background-black;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          padding: 20px 18px;
+          color: $border-white;
+          border-radius: 3px;
+        }
+      }
+      .btn-center {
+        display: flex;
+        justify-content: center;
+        .btn {
+          margin-top: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// For screens with width from 363px to 576px
+@media (min-width: 363px) and (max-width: 575.98px) {
+  .main {
+    .contacts {
+      width: 100%;
+      height: 1100px;
+      margin-top: 30px;
+      background: $background-contact;
+      p {
+        margin-bottom: 0px;
+      }
+      &__row {
+        @include flex-column;
+        img {
+          width: 42px;
+          padding-bottom: 30px;
+        }
+        .contacts__subtitle {
+          padding-top: 30px;
+        }
+      }
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+        img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+        }
+        .contacts__text {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+      &__link {
+        &:hover {
+          color: $gray-hover;
+        }
+      }
+    }
+    .map-form {
+      .form {
+        max-height: 900px;
+        max-width: 450px;
+        width: 90%;
+        background-color: $background-black;
+        padding: 40px 30px;
+        overflow: none;
+        input {
+          height: 50px;
+          background-color: $background-black;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          padding: 20px 18px;
+          color: $gray;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 48px;
+          border-radius: 3px;
+          &:focus {
+            box-shadow: 0px 0px 5px $gray;
+          }
+          &::placeholder {
+            opacity: 0.2;
+            color: $white;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 48px;
+          }
+        }
+        textarea {
+          height: 190px;
+          resize: none;
+          overflow-y: auto;
+          font-size: 16px;
+          background-color: $background-black;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          padding: 20px 18px;
+          color: $border-white;
+          border-radius: 3px;
+        }
+      }
+      .btn-center {
+        display: flex;
+        justify-content: center;
+        .btn {
+          margin-top: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// For screens with width from 576px to 768px
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .main {
+    .contacts {
+      width: 100%;
+      height: 950px;
+      margin-top: 30px;
+      background: $background-contact;
+      p {
+        margin-bottom: 0px;
+      }
+      &__row {
+        @include flex-column;
+        img {
+          width: 42px;
+          padding-bottom: 30px;
+        }
+        .contacts__subtitle {
+          padding-top: 30px;
+        }
+      }
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+        img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+        }
+        .contacts__text {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+      &__link {
+        &:hover {
+          color: $gray-hover;
+        }
+      }
+    }
+    .map-form {
+      .form {
+        max-height: 900px;
+        max-width: 450px;
+        width: 90%;
+        background-color: $background-black;
+        padding: 40px 30px;
+        overflow: none;
+        input {
+          height: 50px;
+          background-color: $background-black;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          padding: 20px 18px;
+          color: $gray;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 48px;
+          border-radius: 3px;
+          &:focus {
+            box-shadow: 0px 0px 5px $gray;
+          }
+          &::placeholder {
+            opacity: 0.2;
+            color: $white;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 48px;
+          }
+        }
+        textarea {
+          height: 190px;
+          resize: none;
+          overflow-y: auto;
+          font-size: 16px;
+          background-color: $background-black;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          padding: 20px 18px;
+          color: $border-white;
+          border-radius: 3px;
+        }
+      }
+      .btn-center {
+        display: flex;
+        justify-content: center;
+        .btn {
+          margin-top: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// For screens with width from 768px to 992px
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main {
+    .contacts {
+      width: 100%;
+      height: 800px;
+      margin-top: 30px;
+      background: $background-contact;
+      p {
+        margin-bottom: 0px;
+      }
+      &__row {
+        @include flex-column;
+        img {
+          width: 42px;
+          padding-bottom: 30px;
+        }
+        .contacts__subtitle {
+          padding-top: 30px;
+        }
+      }
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+        img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+        }
+        .contacts__text {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+      &__link {
+        &:hover {
+          color: $gray-hover;
+        }
+      }
+    }
+    .map-form {
+      .form {
+        max-height: 900px;
+        max-width: 450px;
+        width: 90%;
+        background-color: $background-black;
+        padding: 40px 30px;
+        overflow: none;
+        input {
+          height: 50px;
+          background-color: $background-black;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          padding: 20px 18px;
+          color: $gray;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 48px;
+          border-radius: 3px;
+          &:focus {
+            box-shadow: 0px 0px 5px $gray;
+          }
+          &::placeholder {
+            opacity: 0.2;
+            color: $white;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 48px;
+          }
+        }
+        textarea {
+          height: 190px;
+          resize: none;
+          overflow-y: auto;
+          font-size: 16px;
+          background-color: $background-black;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          padding: 20px 18px;
+          color: $border-white;
+          border-radius: 3px;
+        }
+      }
+      .btn-center {
+        display: flex;
+        justify-content: center;
+        .btn {
+          margin-top: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  } 
+}
