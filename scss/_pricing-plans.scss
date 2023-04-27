@@ -1,0 +1,291 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.pricing-plans {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+
+    .pricing-plans__button-active {
+      padding-bottom: 29px;
+      .btn {
+        width: 160px;
+        height: 50px;
+        box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
+        background-color: $blue;
+        &:hover {
+          background: none;
+          border-bottom: 1px solid $blue;
+          color: $blue;
+        }
+      }
+    }
+  }
+  img {
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+  .pricing-plans__card {
+    border: 1px solid $border-white;
+    .pricing-plans__card-body {
+      .pricing-plans__card-title {
+        border-bottom: 1px solid $border-white;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 69px;
+        margin-bottom: 0px;
+      }
+      .title-active {
+        color: $blue;
+      }
+      .pricing-plans__card-text {
+        border-bottom: 1px solid $border-white;
+        padding: 43px 0px;
+        .pricing-plans__dolar-active {
+          margin-bottom: 0px;
+          margin-top: 15px;
+          font-size: 30px;
+          font-weight: 600;
+        }
+        .pricing-plans__numb-active {
+          font-size: 60px;
+          font-weight: 600;
+          margin-bottom: 0px;
+          line-height: 60px;
+        }
+        .pricing-plans__dolar-active,
+        .pricing-plans__numb-active,
+        .p-active {
+          color: $white;
+        }
+        @include flex-column;
+        .ricing-plans__card-row {
+          @include flex-row(flex, row, center, none);
+          .pricing-plans__dolar {
+            margin-bottom: 0px;
+            margin-top: 15px;
+            font-size: 30px;
+            font-weight: 600;
+            color: $namb;
+          }
+          .pricing-plans__numb {
+            font-size: 60px;
+            font-weight: 600;
+            color: $namb;
+            margin-bottom: 0px;
+            line-height: 60px;
+          }
+        }
+      }
+      .text-active {
+        background-color: $blue;
+      }
+      p {
+        font-size: 20px;
+        color: $gray;
+        margin-bottom: 0px;
+        line-height: 16px;
+      }
+    }
+    .pricing-plans__column {
+      @include flex-column;
+      .pricing-plans__text {
+        margin-bottom: 0px;
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 25px;
+          margin: auto 37px;
+          margin-top: 52px;
+          padding-bottom: 30px;
+          span {
+            color: $blue;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+          }
+        }
+      }
+      .pricing-plans__button {
+        padding-bottom: 29px;
+        .btn {
+          width: 160px;
+          height: 50px;
+          border: 1px solid $border-white;
+          background-color: $white;
+          color: $blue;
+          &:hover {
+            background: $border-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Additional styles for screens smaller than 363px
+@media (max-width: 363px) {
+  .pricing-plans {
+    .container {
+      margin-top: 40px;
+    }
+    img {
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+    .pricing-plans__card {
+      .pricing-plans__card-body {
+        .pricing-plans__card-title {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 50px;
+          margin-bottom: 0px;
+        }
+        .pricing-plans__card-text {
+          border-bottom: 1px solid $border-white;
+          padding: 43px 0px;
+          .pricing-plans__dolar-active {
+            margin-bottom: 0px;
+            margin-top: 15px;
+            font-size: 30px;
+            font-weight: 600;
+          }
+          .pricing-plans__numb-active {
+            font-size: 60px;
+            font-weight: 600;
+            margin-bottom: 0px;
+            line-height: 60px;
+          }
+          .ricing-plans__card-row {
+            .pricing-plans__dolar {
+              margin-bottom: 0px;
+              margin-top: 15px;
+              font-size: 30px;
+              font-weight: 600;
+              color: $namb;
+            }
+            .pricing-plans__numb {
+              font-size: 60px;
+              font-weight: 600;
+              margin-bottom: 0px;
+              line-height: 60px;
+            }
+          }
+        }
+        p {
+          font-size: 20px;
+          margin-bottom: 0px;
+          line-height: 16px;
+        }
+      }
+      .pricing-plans__column {
+        .pricing-plans__text {
+          p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            margin: auto 20px;
+            margin-top: 30px;
+            padding-bottom: 30px;
+            span {
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 30px;
+            }
+          }
+        }
+        .pricing-plans__button {
+          padding-bottom: 29px;
+        }
+      }
+    }
+  }
+}
+
+// For screens with width from 363px to 576px
+@media (min-width: 363px) and (max-width: 575.98px) {
+  .pricing-plans {
+    img {
+      padding-top: 30px;
+      padding-bottom: 70px;
+    }
+    .col-12 {
+      @include flex-column;
+    }
+    .pricing-plans__card {
+      max-width: 343px;
+      .pricing-plans__card-body {
+        .pricing-plans__card-title {
+          border-bottom: 1px solid $border-white;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 69px;
+          margin-bottom: 0px;
+        }
+        .title-active {
+          color: $blue;
+        }
+        .pricing-plans__card-text {
+          border-bottom: 1px solid $border-white;
+          padding: 43px 0px;
+          .pricing-plans__dolar-active {
+            margin-bottom: 0px;
+            margin-top: 15px;
+            font-size: 30px;
+            font-weight: 600;
+          }
+          .pricing-plans__numb-active {
+            font-size: 60px;
+            font-weight: 600;
+            margin-bottom: 0px;
+            line-height: 60px;
+          }
+          .ricing-plans__card-row {
+            .pricing-plans__dolar {
+              margin-bottom: 0px;
+              margin-top: 15px;
+              font-size: 30px;
+              font-weight: 600;
+              color: $namb;
+            }
+            .pricing-plans__numb {
+              font-size: 60px;
+              font-weight: 600;
+              color: $namb;
+              margin-bottom: 0px;
+              line-height: 60px;
+            }
+          }
+        }
+        p {
+          font-size: 20px;
+          color: $gray;
+          margin-bottom: 0px;
+          line-height: 16px;
+        }
+      }
+      .pricing-plans__column {
+        .pricing-plans__text {
+          p {
+            font-size: 23px;
+            font-weight: 400;
+            line-height: 30px;
+            margin: auto 30px;
+            margin-top: 52px;
+            padding-bottom: 30px;
+            span {
+              font-size: 23px;
+              font-weight: 400;
+              line-height: 30px;
+            }
+          }
+        }
+        .pricing-plans__button {
+          padding-bottom: 29px;
+        }
+      }
+    }
+  }
+}

@@ -5,9 +5,15 @@
 @import "product-overview.scss";
 @import "details.scss";
 @import "testimonials-slider.scss";
+@import "pricing-plans.scss";
 * {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 .container {
   max-width: 1170px;
@@ -54,6 +60,10 @@ img {
     background: $gray;
   }
 }
+.span-blue{
+  color: $blue;
+}
+
 
 // Additional styles for screens smaller than 363px
 @media (max-width: 363px) {
